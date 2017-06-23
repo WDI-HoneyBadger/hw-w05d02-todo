@@ -1,6 +1,6 @@
 # hw-w05-d05:  ToDo
 
-![](https://giphy.com/gifs/26ufnwz3wDUli7GU0/html5)
+![](https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif)
 
 ## Spec: 
 
