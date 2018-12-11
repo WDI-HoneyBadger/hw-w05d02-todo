@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+  <title>Edit Task</title>
+</head>
+<body>
+  <h1>Edit Tast</h1>
+  
+    <a href="/">Task Home</a>
+    <a href="/todo">All Tasks</a>
+
+    <form  action="/todo/{{id}}?_method=PUT" method="POST" >
+    <label for="task">
+      task: <input type="text" name="task" id="task" value="{{task}}"/>
+    </label>
+    <label for="kindofsupport">
+    kind Of Support: <input type="text" name="kindofsupport" id="kindofsupport" value="{{kindofsupport}}"/>
+  
+    <label for="task">
+        building: <input type="text" name="building" id="building" value="{{building}}"/>
+      </label>
+    <button type="submit">Submit Update</button>
+</form>
+
+</body>
+</html>

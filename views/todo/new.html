@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+  <title>New Task</title>
+</head>
+<body>
+  <a href="/">Task Home</a>
+    <a href="/todo">All Tasks</a>
+  
+  <form  action="/todo" method="POST">
+    <label>
+        task: <input type="text" name="task" id="task" />
+    </label>
+    <label >
+        kind-of-support: <input type="text" name="kindofsupport" id="kindofsupport" />
+    <label >
+        building: <input type="text" name="building" id="building" />
+     
+      <button type="submit"> Create new Task</button>
+    </form>
+</body>
+</html>

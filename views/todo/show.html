@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+  <title>Show Task</title>
+</head>
+<body>
+  <h1>{{name}}</h1>
+    
+      <a href="/">Task Home</a>
+      <a href="/todo">All Tasks</a>
+    <form action="/todo/{{id}}?_method=DELETE" method="POST">
+    <p>Tast : {{task}}</p>
+    <p>Kind Of Support : {{kindofsupport}}</p>
+    <p>Building : {{building}}</p>
+    
+   
+      <button type="submit">Delete Task</button>
+    </form>
+    <form action="/todo/{{id}}/edit">
+        <button type="submit">Edit Task</button>
+    </form>
+</body>
+</html>
