@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>All Lists</title>
+</head>
+<body>
+  
+  <h1>All Lists</h1>
+
+  <a href="/">Back to home page</a>
+  {{#list}}
+<ul>
+  <a href="/todo/{{id}}"><li>{{name}}</li></a>
+  <li>{{explanation}}</li>
+</ul>
+  {{/list}}
+</body>
+</html> 
