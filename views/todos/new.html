@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+  <!-- <P>{{#todoList}}</P> -->
+ 
+    <form class="create" action="/todos" method="POST">
+      <label for="subject">
+       Subject: <input type="text" name="subject" id="subject" />
+      </label>
+      <label for="content">
+            content: <input type="text" name="content" id="content" />
+      </label>
+      <button type="submit">Create To Do List</button>
+    </form>
+    <!-- <P>{{/todolist}}</P> -->
+    <br>
+    <a href="/">Go To Home Page</a>
+    <br>
+    <a href="/todo">Go To List Page</a>
+</body>
+</html>
