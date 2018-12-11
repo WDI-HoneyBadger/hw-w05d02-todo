@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Tasks</title>
+</head>
+<body>
+    <h1>Edit Task</h1>
+    
+    <div>
+        <a href="/">Home</a>
+        <a href="/todo">Other Tasks..</a>
+    </div>
+      
+      
+    <form action="/todo/{{id}}?_method=PUT" method="POST" >
+        <label for="task">
+            Task: <input type="text" name="task" id="task" value="{{task}}"/>
+        </label>
+        
+        <label for="description">
+            Description: <input type="textarea" name="description" id="description" value="{{description}}"/>
+        </label>
+                  
+        <label for="due_time">
+            Due Time: <input type="time" name="due_time" id="due_time" value="{{due_time}}"/>
+        </label>
+                  
+        <button type="submit">Update Task!</button>
+    </form>
+      
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>show indivisual list page</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/todo">Other task to do..</a>
+    </nav>
+
+  <ul>
+      <li>Task: {{task}}</li>
+      <li>Description: {{description}}</li>
+      <li>Due Time: {{due_time}}</li>
+  </ul>
+  
+
+
+  <form action="/todo/{{id}}?_method=DELETE" method="POST">
+    <button type="submit">Delete todo!</button>
+  </form>
+</body>
+</html>

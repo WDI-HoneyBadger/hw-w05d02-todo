@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>toDo list</title>
+</head>
+<body>
+    <h1>Your To-Do List</h1>
+    <div>
+        <a href="/">Home</a>
+        <a href="/todo/new">Add New Task</a>
+    </div>
+    
+    <div>
+        {{#todo}}
+            <a href="/todo/{{id}}">
+                <h3>{{task}}</h3>
+            </a>
+        {{/todo}}
+    </div>
+        
+</body>
+</html>
