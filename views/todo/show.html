@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Show item</title>
+</head>
+<body>
+  
+    <a href="/">Back to home page</a>
+    <a href="/todo">ToDo List</a>
+    <!-- <a href="/todo/{{id}}/edit">Edit item</a> -->
+
+    {{#list}}
+  <h2>{{name}}</h2>
+  <p>{{explanation}}</p>
+
+  <form action="/todo/{{id}}?_method=DELETE" method="POST">
+    <button type="submit">Done</button>
+  </form>
+  <a href="/todo/{{id}}/edit"><button  type="submit">Edit</button></a>
+  {{/list}}
+
+</body>
+</html>
+
+
