@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edit Term</title>
+</head>
+<body>
+  <h1>create a new todo</h1>
+  <form action="/todos/{{id}}?_method=PUT" method="POST">
+    <label for="subject"> item<input id="subject" name="subject" type="text" value ="{{subject}}"></label>
+    <label for="content">  <input id="content" type="text" name="content" value ="{{content}}"></label>
+    <button type="submit">Edit todo</button>
+  </form>
+</body>
+</html>
