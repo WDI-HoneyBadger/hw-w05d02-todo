@@ -1,0 +1,27 @@
+body {
+    background-color: lightsteelblue;
+    margin: 50px auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.list {
+    width: 400px;
+    height: 300px;
+    border: 1px solid steelblue;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: gainsboro;
+}
+
+.list > h2 > a {
+    color:steelblue;
+}
