@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+        {{#todolist}}
+        <h2>Subject: </h2>
+         <input type="text" name="subject" id="subject" value="{{subject}}">
+
+        <h2>Content: </h2>
+         <input type="text" name="content" id="content" value="{{content}}">
+        {{/todolist}}
+
+<button type="submit" >
+     Edit
+    </button>
+
+
+</body>
+</html>
