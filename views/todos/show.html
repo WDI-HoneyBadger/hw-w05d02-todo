@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body >
+    {{#todoList}}
+    <a href="/"><h3 style="font-family: Gamja Flower; color: midnightblue; ">Back Home</h3></a>
+    <h2 style="font-family: Gamja Flower; color:crimson; ">{{subject}}</h2>
+    <h3 style="font-family: Gamja Flower; color:darkslategrey; ">{{content}}</h3>
+    <form action="/todo/{{id}}?_method=DELETE" method="post">
+    <button type="submit">Delete Todo</button>
+    </form>
+    <a href="/todo/{{id}}/edit"> <button type="submit">Update</button></a>
+    {{/todoList}}
+</body>
+</html>
