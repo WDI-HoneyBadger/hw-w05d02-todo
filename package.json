@@ -1,0 +1,27 @@
+{
+  "name": "hw-w05d02-todo",
+  "version": "1.0.0",
+  "description": "![](https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marwah14/hw-w05d02-todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marwah14/hw-w05d02-todo/issues"
+  },
+  "homepage": "https://github.com/Marwah14/hw-w05d02-todo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mustache-express": "^1.2.8",
+    "pg": "^7.7.1",
+    "pg-promise": "^8.5.3"
+  }
+}
