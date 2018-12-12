@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+
+
+  <link rel="stylesheet" href="/static/styles/styles.css">
+  
+  <title>Edit To Do List</title>
+</head>
+<body>
+  <h1>Edit list</h1>
+  <div class="links">
+  </div>
+  <form class="create-todo" action="/todo/{{id}}?_method=PUT" method="POST" >
+    <label for="supject">
+        <label for="day">
+            day: <input type="text" name="day" id="day" />
+    </label>
+            Supject: <input type="text" name="supject" id="supject" />
+    </label>
+    <label for="content">
+            content: <input type="text" name="content" id="content" />
+    </label>
+    <button type="submit">Update the list</button>
+  </form>
+  <a href="/"> <i class="material-icons">arrow_back</i></a>
+  <a href="/todo">All list</a>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+
+  <title>todo: {{supject}}</title>
+</head>
+
+<body>
+  <div class="show-todo">
+<h1>{{supject}}</h1>
+    </div>
+    <div class="todolist">
+        <p>day: {{day}} </p>
+      <p>Supject: {{supject}} </p>
+      <p>content: {{content}}</p>
+
+    </div>
+    <form action="/todo/{{id}}?_method=DELETE" method="POST">
+      <button type="submit" class="material-icons">remove_circle</button>
+    </form>
+
+
+    <div class="links">
+        <a href="/" class="material-icons">arrow_back</a>
+        <a href="/todo">All list</a>
+  </div>
+  
+
+</body>
+
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+
+
+    <title>my To do list</title>
+</head>
+<body>
+    <div class="frist">
+    <h1>My to do list</h1>    
+    <a href="/todo/new"> <i class="material-icons">add_circle</i></a>
+   </div>
+
+
+
+    <div class="tap">
+            <p>{{#todo}} </p>
+    <table>
+        <tr> <th colspan="2" ><a href="/todo/{{id}}">{{day}}</th></tr>
+
+<tr>
+            <td> {{supject}}</td>
+                <td> {{content}}</td>
+
+            </tr>
+    </table>
+    </div>
+  <p>  {{/todo}}</p> 
+
+
+     <a href="/"> <i class="material-icons">arrow_back</i></a>
+</body>
+</html>
