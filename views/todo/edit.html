@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edit To Do</title>
+</head>
+<body>
+  <h1>Edit To Do</h1>
+  <form action="/todo/{{id}}?_method=PUT" method="post">
+    <label for="name">
+      name: <input type="text" name="name" id="name" value="{{name}}">
+    </label>
+    <br>
+    <br>
+    <label for="explanation">
+      explanation: <input type="text" name="explanation" id="explanation" value="{{explanation}}">
+    </label>
+    <br>
+    <br>
+    <label for="priority">
+        priority: <input type="text" name="priority" id="priority" value="{{priority}}">
+      </label>
+      <br>
+      <br>
+    <button type="submit">submit</button>
+  </form>
+</body>
+</html>
