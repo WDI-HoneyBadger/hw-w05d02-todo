@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TO DO List</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>this is my ToDo list</h1>
-    <a href="/todos">To DO List</a>
-
+    {{#todo}}
+        <h2>{{subject}}</h2>
+        <p>{{content}}</p>
+    {{/tasks}}
 </body>
 </html>
