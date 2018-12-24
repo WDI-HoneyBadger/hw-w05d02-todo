@@ -17,29 +17,37 @@ router.post('/', todo.create, redirectShow);
 router.put('/:id', todo.update, redirectShow);
 
 function renderIndex(req, res){
-    res.send(res.locals.todo);
+    var mustacheVariables = {
+        todo : res.locals.todo
+    }
+    res.render('./todos/index', mustacheVariables);
 }
 
 function redirectShow(req, res){
-    res.redirect(`/todo/${res.locals.todo_id}`);
+    res.redirect(`/todos/${res.locals.todo_id}`);
 }
 
 
 function renderShow(req, res){
-var mustacheVariables; 
-
-
+    // var mustacheVariables = {
+//     todo : res.locals.todo     why didnt this work in renderShow from my scafolding like renderIndex??
+// }
+    var mustacheVariables = res.locals.todo;
+    res.render('./todos/show', mustacheVariables);
 }
+
+
 
 function redirectIndex(req, res){
-
+    res.redirect('/todos')
 }
 function renderEdit(req, res){
-    var mustacheVariables = res.locals.todo
+    var mustacheVariables = res.locals.todo;
+    res.render('./todos/edit', mustacheVariables);
 }
 
 function renderNew(req, res){
-    var mustacheVariables = res.locals.todo
+    res.render('./todos/new')
 }
 
 module.exports = router;

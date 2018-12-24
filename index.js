@@ -32,12 +32,3 @@ app.use("/todos", todoController);
 app.listen(port, function () {
     console.log('Express listening on localhost:' + port);
     });
-
-//app.use homepage 
-
-//app.use todoo
-
-
-
-
-

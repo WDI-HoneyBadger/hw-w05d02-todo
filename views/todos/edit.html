@@ -8,7 +8,14 @@
 </head>
 <body>
     <h1>EDIT</h1>
-    <form action="/todo/{{id}}?_method=PUT" method="POST"></form>
-    
+    <form action="/todo/{{id}}?_method=PUT" method="post">
+        <label for="subject">
+            subject: <input type="text" name="subject" id="subject" value="{{subject}}">
+          </label>
+          <label for="content">
+            content: <input type="text" name="content" id="content" value="{{content}}">
+          </label>
+          <button type="submit">SUBMIT</button>
+      </form>
 </body>
 </html>

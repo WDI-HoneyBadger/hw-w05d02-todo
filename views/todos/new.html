@@ -8,9 +8,14 @@
 </head>
 <body>
     <h1>Enter anew task</h1>
-    <form action="/todo">
-    <button type="submit">submit new </button>
-    
-    </form>
+    <form action="/todo" method="post">
+        <label for="subject">
+          subject: <input type="text" name="subject" id="subject">
+        </label>
+        <label for="content">
+          content: <input type="text" name="content" id="content">
+        </label>
+        <button type="submit">NEW</button>
+      </form>
 </body>
 </html>
