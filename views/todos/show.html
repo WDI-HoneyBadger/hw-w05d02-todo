@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="/todos">back to Todo List</a>
     <h2>{{subject}}</h2>
     <p>{{content}}</p>
-    <form action="/todo/{{id}}?_method=DELETE" method="post">
-        <button type="submit"> delete todo </button>
+    <form action="/todos/{{id}}?_method=DELETE" method="post">
+        <button type="submit">DELETE</button>
     </form>
+    
 </body>
 </html>
